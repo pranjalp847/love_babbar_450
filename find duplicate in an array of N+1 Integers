@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int x;
+    int temp;
+    vector<int> nums;
+    
+    nums = {1,1};
+    
+    sort(nums.begin(),nums.end());
+        
+    for(int i=0;i<nums.size();i++)
+    {
+        if(nums[i]==nums[i+1])
+            {
+                x = nums[i];
+            }
+    }    
+    
+    cout << x;
+    return 0;
+}
