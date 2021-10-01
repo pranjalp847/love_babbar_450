@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int n=3,k=6;
+    int a[3]={20,12,17};
+    int i=0,j=0,s=0;
+    
+    while(i<n)
+    {
+        j=i;
+        while(a[i]>k && j<n)
+        {
+            j++;
+            if(a[j]<=k)
+            {
+                swap(a[i],a[j]);
+                s++;
+            }
+            //cout << "work";
+        }
+        i++;
+    }
+    
+    cout << s;
+    return 0;
+}
+
